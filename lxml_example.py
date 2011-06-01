@@ -25,6 +25,6 @@ if __name__ == '__main__':
 
     for c in configs:
         params = c.xpath('param')
-        print c.tag, c.attrib['name']
+        print '%s attrs=%s' % (c.tag, c.attrib)
         for p in params:
-            print p.text
+            print '  %s' % p.text
