@@ -15,7 +15,7 @@ if __name__ == '__main__':
                         E.param("ITEM2: p4"),
                     name='Config 2'),
             ))
-    data = etree.tostring(test, pretty_print=True)
+    data = etree.tostring(test, pretty_print=True, xml_declaration=True)
 
     print data
 
